@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Did you fill the previous week's form (Monday to Friday)?</h1>
+        <button id="yesButton">Yes</button>
+        <button id="noButton">No</button>
+        
+        <div id="daysForm" class="hidden">
+            <h2>Select the days you missed:</h2>
+            <form id="weekDaysForm">
+                <!-- Days checkboxes will be added dynamically here -->
+            </form>
+            <button id="submitDaysButton" class="hidden">Submit</button>
+        </div>
+
+        <div id="selectedDays" class="hidden">
+            <h2>You selected the following days:</h2>
+            <ul id="daysList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

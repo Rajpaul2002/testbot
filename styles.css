@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: midnightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Full-screen box with more gap and padding */
+.container {
+    background-color: cornsilk;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Heading styling */
+h1, h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Styling for the buttons */
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Separate Yes and No button colors */
+#yesButton {
+    background-color: #28a745;
+}
+
+#yesButton:hover {
+    background-color: #218838;
+}
+
+#noButton {
+    background-color: #dc3545;
+}
+
+#noButton:hover {
+    background-color: #c82333;
+}
+
+/* Checkbox container layout */
+form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns for the days */
+    gap: 20px; /* Space between each checkbox */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Checkbox label styling */
+form label {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Style the days list */
+#daysList {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Hidden class to hide elements initially */
+.hidden {
+    display: none;
+}
+
+/* Optional: Add some padding to the JSON output */
+pre {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+    color: #212529;
+}
